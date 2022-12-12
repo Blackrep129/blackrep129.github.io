@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Matthew Pawlowski</title>
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Final Project Website">
+  <meta name="author" content="Matthew Pawlowski">
+  
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="images/logos/photograph.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="class.html">Classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="content.html">Contents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary">Course Curriculum</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- page title -->
+
+<!-- about -->
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <p> Term
+          <select class="dropdown" id="semesterDropDown">
+            <option value="English Composition I, Personal Nutrition, Intro to Programming, Information Security, College Algebra Enhanced, Saluki Success">Fall 2020</option>
+            <option value="Crime/Justice/Soc Diversity, English Composition II, Network Fundamentals, Operating Systems, Discrete Math for IT">Spring 2021</option>
+            <option value="Intro:Oral Communication, 20th Century America, Intro Cyber Operations, Intro to Cyber Defense Comp, Ethical & Legal Issues in IT, Database Design & Processing">Fall 2021</option>
+            <option value="Personal Finance, Health Care Ethics, System Administration, Applied Stats, Programming II">Spring 2022</option>
+            <option value="Technical Career Subjects">Summer 2022</option>
+            <option value="Geomythology, Technical Career Subjects, Cyber Defense Competition, Individual Study, Wireless Comm & Security, General Biology">Fall 2022</option>
+            <option value="Weather Climate Society, Apps of Technical Comm, Database Programming w/SQL, User Experience Design, IT Project Management">Spring 2023</option>
+            <option value="TBD">Fall 2023</option>
+            <option value="TBD">Spring 2024</option>
+          </select>
+        </p>
+
+        <p>Classes -  
+          <span class="output"></span>
+        </p>
+
+        <button onclick="getOption()" class="btn btn-primary w-100">Select Semester</button>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about -->
+
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">matthew.pawlowski@siu.edu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+
+// Dropdown Menu JavaScript
+<script type="text/javascript">
+  function getOption() {
+    selectElement = document.querySelector('#semesterDropDown');
+    output = selectElement.value;
+    document.querySelector('.output').textContent = output;
+  }
+</script>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<!-- adobe edge font -->
+<script src="use.edgefonts.net/averia-libre:n4;bree-serif:n4:all.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
